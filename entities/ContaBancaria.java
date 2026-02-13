@@ -11,7 +11,7 @@ public class ContaBancaria {
     }
 
     public void exibirDados() {
-        System.out.println("Titular Conta: " + titular);
+        System.out.println("Titular da Conta: " + titular);
         System.out.println("Saldo: " + saldo);
     }
 
@@ -21,5 +21,13 @@ public class ContaBancaria {
         saldo += valor;
     }
 }
+
+
+public void sacar(double valor) {
+    if (valor > 0 && saldo >= valor) {
+        saldo -= valor;
+    }
+}
+
 
 }
