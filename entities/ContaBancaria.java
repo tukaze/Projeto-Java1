@@ -14,4 +14,14 @@ public class ContaBancaria {
         System.out.println("Titular: " + titular);
         System.out.println("Saldo: " + saldo);
     }
+
+
+
+public void sacar(double valor) {
+    if (valor > 0 && saldo >= valor) {
+        saldo -= valor;
+    }
+}
+
+
 }
